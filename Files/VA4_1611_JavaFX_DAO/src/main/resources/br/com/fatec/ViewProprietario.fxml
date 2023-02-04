@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="190.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controllers.ViewProprietarioController">
+   <children>
+      <Label fx:id="lblCodigo" layoutX="14.0" layoutY="32.0" text="Código">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigo" layoutX="71.0" layoutY="27.0" prefHeight="31.0" prefWidth="136.0" />
+      <Label fx:id="lblNome" layoutX="14.0" layoutY="75.0" text="Nome">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="60.0" layoutY="71.0" prefHeight="31.0" prefWidth="242.0" />
+      <HBox fx:id="hboxBotoes" layoutX="14.0" layoutY="115.0" prefHeight="31.0" prefWidth="284.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnIncluir" mnemonicParsing="false" onAction="#btnIncluir_Click" text="Incluir">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterar_Click" text="Alterar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" text="Excluir">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSair" mnemonicParsing="false" onAction="#btnSair_Click" prefHeight="31.0" prefWidth="64.0" text="Sair">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btnPesquisar" layoutX="219.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" text="Pesquisar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
