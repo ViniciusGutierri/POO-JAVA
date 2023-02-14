@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="852.0" style="-fx-background-color: #737373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsClieController">
+   <children>
+      <TableView fx:id="tabCliente" layoutY="86.0" prefHeight="309.0" prefWidth="852.0" style="-fx-background-color: #737373;">
+         <columns>
+            <TableColumn fx:id="colCPF" prefWidth="103.0" text="CPF" />
+            <TableColumn fx:id="colNome" prefWidth="183.0" text="NOME" />
+            <TableColumn fx:id="colCelular" prefWidth="102.0" text="CELULAR" />
+            <TableColumn fx:id="colCEP" prefWidth="73.66665649414062" text="CEP" />
+            <TableColumn fx:id="colBairro" prefWidth="88.33334350585938" text="BAIRRO" />
+            <TableColumn fx:id="colRua" prefWidth="138.0" text="RUA" />
+            <TableColumn fx:id="colNum" prefWidth="40.0" text="Nº" />
+            <TableColumn fx:id="colComplemento" prefWidth="99.3333740234375" text="COMPLEMENTO" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="107.0" fitWidth="329.0" layoutX="257.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/consClientes.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

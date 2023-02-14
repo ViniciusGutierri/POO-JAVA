@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="722.0" style="-fx-background-color: #737373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsPizzaController">
+   <children>
+      <TableView fx:id="tabPizza" layoutX="-1.0" layoutY="95.0" prefHeight="346.0" prefWidth="723.0" style="-fx-background-color: #737373;">
+         <columns>
+            <TableColumn fx:id="colID" text="ID" />
+            <TableColumn fx:id="colSabor" prefWidth="103.0" text="SABOR" />
+            <TableColumn fx:id="colDescricao" prefWidth="192.33334350585938" text="DESCRIÇÃO" />
+            <TableColumn fx:id="colTam" minWidth="0.0" prefWidth="94.66665649414062" text="TAMANHO" />
+            <TableColumn fx:id="colValor" prefWidth="121.66665649414062" text="VALOR" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="31.0" fitWidth="302.0" layoutX="224.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/consPizzas.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

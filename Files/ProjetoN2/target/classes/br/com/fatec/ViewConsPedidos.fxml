@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="1312.0" style="-fx-background-color: #737373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsPedidosController">
+   <children>
+      <TableView fx:id="tabPedido" layoutY="107.0" prefHeight="383.0" prefWidth="1312.0" style="-fx-background-color: #737373;">
+         <columns>
+            <TableColumn fx:id="colID" text="ID" />
+            <TableColumn fx:id="colCPF" prefWidth="103.0" text="CPF" />
+            <TableColumn fx:id="colCEP" prefWidth="73.66665649414062" text="CEP" />
+            <TableColumn fx:id="colNum" prefWidth="54.0" text="Nº" />
+            <TableColumn fx:id="colComplemento" prefWidth="105.0" text="COMPLEMENTO" />
+            <TableColumn fx:id="colMatricula" prefWidth="87.0" text="MATRICULA" />
+            <TableColumn fx:id="colSabor" prefWidth="190.0" text="SABOR" />
+            <TableColumn fx:id="colDescricao" prefWidth="241.0" text="DESCRIÇÃO" />
+            <TableColumn fx:id="colVal" minWidth="2.0" prefWidth="96.0" text="VAL.UNI.." />
+            <TableColumn fx:id="colQtde" prefWidth="91.0" text="QTDE" />
+            <TableColumn fx:id="colTotal" prefWidth="100.0" text="TOTAL" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="33.0" fitWidth="341.0" layoutX="503.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/consPedidos.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

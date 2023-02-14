@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewPizzaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737373" height="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <ImageView fitHeight="55.0" fitWidth="504.0" layoutX="62.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/pizzas.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSabor" layoutX="46.0" layoutY="169.0" text="SABOR:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSabor" layoutX="46.0" layoutY="199.0" prefHeight="30.0" prefWidth="504.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblDescricao" layoutX="46.0" layoutY="240.0" text="DESCRIÇÃO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescricao" layoutX="46.0" layoutY="270.0" prefHeight="147.0" prefWidth="504.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="lblTam" layoutX="46.0" layoutY="431.0" text="TAMANHO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTam" layoutX="46.0" layoutY="461.0" prefHeight="30.0" prefWidth="165.0" promptText="P, M ou G">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblValor" layoutX="385.0" layoutY="431.0" text="VALOR:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValor" layoutX="385.0" layoutY="461.0" prefHeight="30.0" prefWidth="165.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <HBox alignment="TOP_CENTER" layoutX="46.0" layoutY="538.0" prefHeight="30.0" prefWidth="504.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#btnCadastrar_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="CADASTRAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterar_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="ALTERAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPesquisar" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="PESQUISAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #DF3821;" text="EXCLUIR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
