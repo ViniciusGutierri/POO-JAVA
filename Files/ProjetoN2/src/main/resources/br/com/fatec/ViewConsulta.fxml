@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsultaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737373" height="96.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="693.0" />
+      <ImageView fitHeight="36.0" fitWidth="314.0" layoutX="230.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/consultas.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="123.0" text="QUAL TABELA DESEJA CONSULTAR?" />
+      <HBox alignment="TOP_CENTER" layoutX="33.0" layoutY="150.0" prefHeight="31.0" prefWidth="628.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#btnCliente_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="CLIENTES" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFornecedores" mnemonicParsing="false" onAction="#btnFornecedores_Click" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #737373;" text="FORNECEDORES" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFuncionarios" mnemonicParsing="false" onAction="#btnFuncionarios_Click" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #737373;" text="FUNCIONARIOS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPedidos" mnemonicParsing="false" onAction="#btnPedidos_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="PEDIDOS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPizzas" mnemonicParsing="false" onAction="#btnPizzas_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="PIZZAS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

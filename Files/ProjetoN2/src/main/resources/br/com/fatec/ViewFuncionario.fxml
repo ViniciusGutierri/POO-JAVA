@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewFuncionarioController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737373" height="131.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="691.0" />
+      <ImageView fitHeight="139.0" fitWidth="578.0" layoutX="57.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/funcionarios.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblCpf" layoutX="35.0" layoutY="157.0" text="CPF:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCpf" layoutX="35.0" layoutY="187.0" prefHeight="30.0" prefWidth="175.0" />
+      <Label fx:id="lblNome" layoutX="217.0" layoutY="157.0" text="NOME:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="217.0" layoutY="187.0" prefHeight="30.0" prefWidth="424.0" />
+      <Label fx:id="lblCargo" layoutX="35.0" layoutY="235.0" text="CARGO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCargo" layoutX="35.0" layoutY="265.0" prefHeight="30.0" prefWidth="175.0" />
+      <Label fx:id="lblCelular" layoutX="219.0" layoutY="235.0" text="CELULAR:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCelular" layoutX="219.0" layoutY="265.0" prefHeight="30.0" prefWidth="194.0" />
+      <Label fx:id="lblNasc" layoutX="422.0" layoutY="235.0" text="DATA DE NASCIMENTO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNasc" layoutX="422.0" layoutY="265.0" prefHeight="30.0" prefWidth="215.0" />
+      <HBox alignment="TOP_CENTER" layoutX="85.0" layoutY="336.0" prefHeight="31.0" prefWidth="521.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#btnCadastrar_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="CADASTRAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterar_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="ALTERAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPesquisar" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #737373;" text="PESQUISAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #DF3821;" text="EXCLUIR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

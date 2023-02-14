@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="747.0" style="-fx-background-color: #737373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsFuncController">
+   <children>
+      <TableView fx:id="tabFuncionario" layoutY="97.0" prefHeight="343.0" prefWidth="747.0" style="-fx-background-color: #737373;">
+        <columns>
+          <TableColumn fx:id="colMatricula" text="MATRICULA" />
+          <TableColumn fx:id="colCPF" prefWidth="103.0" text="CPF" />
+            <TableColumn fx:id="colNome" prefWidth="192.33334350585938" text="NOME" />
+            <TableColumn fx:id="colCargo" minWidth="0.0" prefWidth="94.66665649414062" text="CARGO" />
+            <TableColumn fx:id="colCelular" prefWidth="121.66665649414062" text="CELULAR" />
+            <TableColumn fx:id="colDataNasc" prefWidth="106.0" text="DATA DE NASC." />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="49.0" fitWidth="347.0" layoutX="200.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/consFuncionarios.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="844.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewPedidoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737373" height="162.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="855.0" />
+      <ImageView fitHeight="83.0" fitWidth="312.0" layoutX="308.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagem/pedidos.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblFunc" layoutX="476.0" layoutY="250.0" text="FUNCIONÁRIO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId_Func" layoutX="477.0" layoutY="280.0" prefHeight="30.0" prefWidth="76.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cbFunc" layoutX="556.0" layoutY="280.0" prefHeight="30.0" prefWidth="237.0" />
+      <Label fx:id="lblSabor" layoutX="480.0" layoutY="326.0" text="SABOR:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbSabor" layoutX="480.0" layoutY="356.0" prefHeight="30.0" prefWidth="316.0" />
+      <Label fx:id="lblValorUnit" layoutX="482.0" layoutY="395.0" text="VALOR UNITÁRIO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValorUnit" layoutX="482.0" layoutY="425.0" prefHeight="30.0" prefWidth="162.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblDescricao" layoutX="480.0" layoutY="471.0" text="OBSERVAÇÕES:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescricao" layoutX="480.0" layoutY="501.0" prefHeight="122.0" prefWidth="316.0" />
+      <Label fx:id="lblCpf" layoutX="31.0" layoutY="326.0" text="CPF DO CLIENTE:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCpf" layoutX="31.0" layoutY="356.0" prefHeight="30.0" prefWidth="209.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblCep" layoutX="30.0" layoutY="393.0" text="CEP:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCep" layoutX="31.0" layoutY="423.0" prefHeight="30.0" prefWidth="171.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBuscarCpf" layoutX="246.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnBuscarCpf_Click" prefHeight="30.0" prefWidth="76.0" text="BUSCAR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblBairro" layoutX="31.0" layoutY="464.0" text="BAIRRO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBairro" layoutX="32.0" layoutY="494.0" prefHeight="30.0" prefWidth="316.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblRua" layoutX="33.0" layoutY="532.0" text="RUA:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRua" layoutX="32.0" layoutY="562.0" prefHeight="30.0" prefWidth="316.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblNumero" layoutX="33.0" layoutY="608.0" text="NÚMERO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumero" layoutX="30.0" layoutY="636.0" prefHeight="30.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblComp" layoutX="183.0" layoutY="608.0" text="COMPLEMENTO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtComp" layoutX="184.0" layoutY="636.0" prefHeight="30.0" prefWidth="149.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblQtde" layoutX="665.0" layoutY="395.0" text="QUANTIDADE:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtde" layoutX="665.0" layoutY="425.0" prefHeight="30.0" prefWidth="128.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblValorTotal" layoutX="482.0" layoutY="636.0" text="VALOR TOTAL:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValorTotal" layoutX="482.0" layoutY="666.0" prefHeight="30.0" prefWidth="142.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblPedido" layoutX="28.0" layoutY="250.0" text="PESQUISAR PEDIDO:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPedido" layoutX="30.0" layoutY="280.0" prefHeight="30.0" prefWidth="182.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBuscarPedido" layoutX="220.0" layoutY="280.0" mnemonicParsing="false" onAction="#btnBuscarPedido_Click" prefHeight="30.0" prefWidth="76.0" text="BUSCAR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#737373" height="461.0" layoutX="428.0" layoutY="246.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="4.0" />
+      <HBox alignment="TOP_CENTER" layoutX="77.0" layoutY="735.0" prefHeight="49.0" prefWidth="704.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#btnCadastrar_Click" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #737373;" text="CADASTRAR" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterar_Click" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #737373;" text="ALTERAR" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExcluir" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #DF3821;" text="EXCLUIR" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
